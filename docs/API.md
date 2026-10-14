@@ -150,3 +150,36 @@ Olá. Gostaríamos de te dizer que essa API possui CORS ativado para qualquer or
     - **Erros:**
       - 404 — obra não encontrada
       - 500 — Erro interno do servidor
+
+### POST /mensagens
+    Cria uma nova mensagem
+
+    - **Autenticação:** Sim (Bearer token)
+    - **Body:**
+
+    ```json
+    {
+      "texto": "Boa sorte para todo mundo!"
+    }
+    ```
+
+    - **Resposta de sucesso:** `201 Created`
+
+    ```json
+    {
+      "id": 1,
+      "texto": "Boa sorte para todo mundo!",
+      "imagemUrl": null,
+      "autorId": 2,
+      "autor": {
+        "id": 2,
+        "nome": "Amilton",
+        "fotoUrl": null
+      },
+      "criadoEm": "2026-04-03T10:30:00.000Z"
+    }
+    ```
+
+    - **Erros:**
+      - `400` — O campo texto é obrigatório
+      - `500` — Erro interno do servidor
