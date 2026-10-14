@@ -58,7 +58,7 @@ Olá. Gostaríamos de te dizer que essa API possui CORS ativado para qualquer or
         ]
      
 
-    ### GET /obra/:id
+### GET /obra/:id
 
     Busca uma obra pelo ID
 
@@ -106,7 +106,7 @@ Olá. Gostaríamos de te dizer que essa API possui CORS ativado para qualquer or
       - 404 — obra não encontrada
       - 500 — Erro interno do servidor
 
-    ### PUT /obra/:id
+### PUT /obra/:id
 
     Atualiza o próprio perfil
 
@@ -138,7 +138,7 @@ Olá. Gostaríamos de te dizer que essa API possui CORS ativado para qualquer or
       - 404 — obra não encontrada
       - 500 — Erro interno do servidor
 
-    ### DELETE /obra/:id
+### DELETE /obra/:id
 
     Remove uma obra   
 
