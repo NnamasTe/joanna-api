@@ -4,10 +4,10 @@
   "description": "API REST do Yearbook Digital — IFNMG Salinas 2026",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "dev": "nodemon index.js",
-  "postinstall": "prisma generate"
-},
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "postinstall": "prisma generate"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NnamasTe/joanna-api"
@@ -34,5 +34,10 @@
   },
   "directories": {
     "doc": "docs"
+  },
+  "allowScripts": {
+    "@prisma/client@6.19.3": true,
+    "@prisma/engines@6.19.3": true,
+    "prisma@6.19.3": true
   }
 }
