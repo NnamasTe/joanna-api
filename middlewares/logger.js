@@ -1,14 +1,13 @@
-// Middleware de log — registra cada requisição no terminal
 export default function logger(req, res, next) {
   const inicio = Date.now(); 
 
   res.on('finish', () => {
-    const duracao = Date.now() - inicio;     // timestamp no formato ISO
+    const duracao = Date.now() - inicio;
     const agora = new Date().toISOString();
-    const metodo = req.method;                   // GET, POST, PUT, DELETE
+    const metodo = req.method;
     const url = req.originalUrl;
-    const status = res.statusCode;                 // URL completa da requisição
-    console.log(`[${agora}]${req.method}${req.originalUrl} →${res.statusCode} (${duracao}ms)`);  // exibe no terminal
+    const status = res.statusCode;
+    console.log(`[${agora}]${req.method}${req.originalUrl} →${res.statusCode} (${duracao}ms)`);
   })
-  next();                                       // passa para o próximo middleware/rota
+  next();
 }
