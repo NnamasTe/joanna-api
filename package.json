@@ -1,5 +1,5 @@
 {
-  "name": "yearbook-backend",
+  "name": "joanna-api",
   "version": "1.0.0",
   "description": "API REST do Yearbook Digital — IFNMG Salinas 2026",
   "main": "index.js",
@@ -9,24 +9,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mtvom/yearbook-backend.git"
+    "url": "git+https://github.com/NnamasTe/joanna-api"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/mtvom/yearbook-backend/issues"
+    "url": "https://github.com/NnamasTe/joanna-api/issues"
   },
-  "homepage": "https://github.com/mtvom/yearbook-backend#readme",
+  "homepage": "https://github.com/NnamasTe/joanna-api#readme",
   "dependencies": {
     "@prisma/client": "^6.19.3",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "prisma": "^6.19.3"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
